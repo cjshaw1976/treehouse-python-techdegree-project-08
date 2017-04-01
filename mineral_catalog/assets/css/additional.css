@@ -1,0 +1,82 @@
+/* Letter links in footer */
+.letter-links {
+    line-height: 4em;
+}
+
+.letter-links > a {
+    font-size: 1.8em;
+    letter-spacing: .5em;
+}
+
+.letter-links > a.current {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* half divider for footer */
+.half {
+    display: inline-block;
+    width: 49%;
+}
+
+@media (max-width: 640px) {
+    .half {
+        width: 100%;
+    }
+}
+
+/* left & right menu */
+.leftmenu {
+    position: fixed;
+    width: 250px;
+    padding: 50px 0 150px 50px;
+}
+
+.rightmenu {
+    position: absolute;
+    width: 250px;
+    padding: 50px 50px 0 50px;
+    right: 0px;
+}
+
+.mineral__group > li {
+    list-style: none;
+}
+
+li > a.current {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Overwrite global css */
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.minerals__random {
+    padding: 0 0 20px 0;
+}
+
+input[type="text"] {
+    width: 200px;
+    margin-bottom: 0px;
+    border-radius: 25px;
+    padding: 6px 24px 5px 24px;
+    background: none;
+    color: #fff;
+}
+
+.button {
+    padding: 6px 24px 5px 24px;
+    border-radius: 25px;
+    font-size: 0.8em;
+    font-weight: bold;
+    background: none;
+    color: #fff;
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+}

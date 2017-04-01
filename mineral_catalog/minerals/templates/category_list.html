@@ -1,0 +1,5 @@
+{% for category in categories %}
+{% if category.category != '' %}
+<li><a class="{% if path == 'category/'|add:category.category %}current{% endif %}" href="{% url 'minerals:list' pk='category/'|add:category.category %}">{{ category.category }} ({{ category.id__count }})</a></li>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,5 @@
+{% with 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z' as list %}
+    {% for item in list.split %}
+        <a class="{% if path == item %}current{% endif %}" href="{% url 'minerals:list' pk=item %}">{{ item }}</a>
+    {% endfor %}
+{% endwith %}

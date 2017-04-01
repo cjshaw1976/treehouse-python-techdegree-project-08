@@ -1,0 +1,6 @@
+{% load mineral_extras %}
+{% for group in groups %}
+{% if group.group != '' %}
+<li><a class="{% if path == 'group/'|add:group.group %}current{% endif %}" href="{% url 'minerals:list' pk='group/'|add:group.group %}">{{ group.group }} ({{ group.id__count }})</a></li>
+{% endif %}
+{% endfor %}
